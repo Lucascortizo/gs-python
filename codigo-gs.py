@@ -16,7 +16,7 @@ def principal():
         elif escolha == "2":
             exibir_registros(registros)
         elif escolha == "3":
-            print("Saindo... Até breve!")
+            print("Saindo...")
             break
         else:
             print("Opção inválida.")
@@ -47,5 +47,4 @@ def exibir_registros(registros):
 
 
 # Chamar a função principal para rodar o programa
-if __name__ == "__main__":
-    principal()
+principal()
