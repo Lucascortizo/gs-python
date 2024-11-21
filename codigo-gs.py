@@ -29,7 +29,6 @@ def registrar_consumo(registros):
 
     # Verificar se o consumo é um número inteiro
     if consumo.isnumeric():
-        consumo = float(consumo)  # Convertendo para float
         registros.append({"data": data, "consumo": consumo})
         print("Registro salvo!")
     else:
