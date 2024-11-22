@@ -2,6 +2,24 @@
 def principal():
     print("Seja bem-vindo à EnergyLink!")
     registros = []  # Lista para armazenar os consumos
+#Cadastro
+print("Faça seu Cadastro na EnergyLink")
+user = input("Digite seu usuário")
+while len(user) < 4:
+    print ("Seu nome de usuário deve ter mais de 4 caracteres")
+    user = input("Digite seu usuário")
+while len(user) > 20:
+    print ("Seu nome de usuário deve ter menos de 20 caracteres")
+    user = input("Digite seu usuário")
+nascimento = input("Digite sua data de Nascimento (DD/MM/AA)")
+while not nascimento.isnumeric:
+    print("Data Inválida")
+    nascimento = input("Digite sua data de Nascimento (DD/MM/AAAA)")
+senha = input("Digite sua senha")
+confirma_senha = input("Confirme sua senha")
+while not senha==confirma_senha:
+    print ("As senhas não são iguais!")
+    confirma_senha = input("Confirme sua senha")
 
     # Loop do menu
     while True:
