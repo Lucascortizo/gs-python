@@ -47,10 +47,6 @@ def exibir_registros(registros):
 
 # Função para exibir planos de energia e escolher fornecedor
 def exibir_planos():
-    energias = ["Energia Solar", "Energia Eólica", "Energia Hidrelétrica", "Biomassa", 
-                "Energia de Hidrogênio Verde", "Energia Geométrica", "Energia Marítima", 
-                "Petróleo", "Carvão Mineral", "Gás Natural", "Energia Nuclear"]
-    
     fornecedores = {
         "Energia Solar": ["Enel Green Power", "Atlas Renewable Energy", "Omega Energia", "Canadian Solar"],
         "Energia Eólica": ["EDP Renováveis", "Iberdrola", "Voltalia"],
